@@ -1,9 +1,9 @@
-html {
-    background-image: url(https://images.unsplash.com/photo-1591539652957-ffdd6c7914c6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-}
+
 
 body {
     background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 #message {
@@ -26,3 +26,132 @@ input.invalid {
 .error {
     color: red;
 }
+
+img {
+    position: absolute;
+    background-repeat: no-repeat;
+    
+}
+
+.dog {
+    position: absolute;
+    z-index: 1;
+    margin-left: -20vw;
+    width: 60vw;
+    height: 100%;
+}
+
+.odin {
+    position: absolute;
+    z-index: 10;
+    height: 150px;
+    top: 40vh;
+    left: 10vw;
+    background-color: black;
+    
+}
+
+.odintext {
+    position: absolute;
+    z-index: 10;
+    font-size: 100px;
+    top: 45vh;
+    left: 20vw;
+}
+
+
+
+.block {
+    position: relative;
+    z-index: 10;
+        
+}
+
+.thanks {
+    position: relative;
+    top: 60vh;
+    left: 10vw;
+    color: white;
+    font-size: 10px;
+    z-index: 10;
+}
+
+.login {
+    position: relative;
+    top: 60vh;
+    left: 40vw;
+    padding-left: 10px;
+}
+
+button {
+    
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+}
+
+.container {
+    position: absolute;
+    top: 150%;
+    left: 0%;
+    
+    padding-left: 10px;
+}
+
+form {
+    position: relative;
+    top: 40vh;
+    left: 40vw;
+    display: flex;
+    width: 550px;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    padding-left: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.signtext {
+    position: relative;
+    top: 30vh;
+    left: 40vw;
+    display: flex;
+    justify-content: flex-start;
+    width: 700px;
+    font-size: 20px;
+    
+    padding-left: 10px;
+    
+    
+}
+
+.signtext::before {
+    content: "";
+    position: absolute;
+    top: -300%;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: -170%;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    
+}
+
+
+
+

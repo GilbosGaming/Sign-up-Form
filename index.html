@@ -7,29 +7,44 @@
     <title>Sign up Form</title>
 </head>
 <body>
-<div class="signtext">This is not a real online service! So, you should just, like, I don't know...sign up, right? I mean, what's the worst that could happen haha. Seriously though. You should sign up right now and NOTHING bad will happen. <br> I swear.</div>
+    <img class="dog" src="https://images.unsplash.com/photo-1591539652957-ffdd6c7914c6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <div class=logo><img class="odin" src="odin-lined.png"><div class="odintext">ODIN</div></div>
+<div class="block">
+<div class="signtext">This is not a real online service! So, you should just, like, I don't know...sign up, right? I mean, what's the worst that could happen haha. Seriously though. You should sign up right now, NOTHING bad will happen. <br> I swear.</div>
 <form action="formdata.php" method="get">
+    <div class="form-group">
     <label for="firstname">First Name</label>
     <input type="text" id="firstname" placeholder="Arya" name="firstname" required>
+    </div>
+    <div class="form-group">
     <label for="lastname">Last Name</label>
     <input type="text" id="lastname" placeholder="Gonnasignupyet?" name="lastname" required>
+    </div>
+    <div class="form-group">
     <label for="email">Email</label>
     <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
     <label for="phoneno">Phone Number</label>
     <input type="tel" id="phoneno" name="phoneno" maxlength="11" minlength="11" required>
+    </div>
+    <div class="form-group">
     <label for="password">Password</label>
     <input type="password" id="password" 
        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
        name="password"
            required>
+           </div>
+           <div class="form-group">
     <label for="passwordcon">Confirm Password</label>
     <input type="password" id="passwordcon" 
         title="Passwords must match exactly"
         name="passwordcon"
             required>
+            </div>
         <span id="passwordDNM" class="error"></span>
-        <button type="submit">Create Account</button>
+        <div class="container"><button type="submit">Create Account</button></div>
     </form>
 
 <div id="message">
@@ -40,7 +55,8 @@
     <p id="length" class="invalid">Minimum <b>8 characters</b></p>
   </div>
 <div class="login">Already have an account? <href="">Log in</href></div>
-<div class="thanks">Featured photo : https://unsplash.com/photos/white-and-brown-short-coated-dog-1TPdQq54fH0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash</div>
+<div class="thanks">Featured photo : <u>Giollianosulit</u> Sulit on <u>Unsplash</u></div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
