@@ -1,9 +1,15 @@
-
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     background-color: white;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #message {
@@ -11,8 +17,16 @@ body {
     background: #f1f1f1;
     color: #000;
     position: relative;
+    left: 15vw;
+    top: -5vh;
     padding: 20px;
     margin-top: 10px;
+    max-width: 200px;
+    max-height: 150px;
+    border: 5px solid black;
+    font-size: 11px;
+    opacity: 0.9;
+    
 }
 
 input.invalid {
@@ -44,19 +58,33 @@ img {
 .odin {
     position: absolute;
     z-index: 10;
-    height: 150px;
-    top: 40vh;
-    left: 10vw;
-    background-color: black;
+    height: 130px;
+    top: 33vh;
+    left: 12vw;
+    
     
 }
 
 .odintext {
     position: absolute;
     z-index: 10;
-    font-size: 100px;
-    top: 45vh;
+    font-size: 80px;
+    top: 36vh;
     left: 20vw;
+    color: white;
+    font-family: Norse;
+
+}
+
+.logo {
+    background-color: rgb(56, 38, 38);
+    opacity: 0.4;
+    position: absolute;
+    width: 40vw;
+    height: 25vh;
+    top: 30vh;
+    left: 0vw;
+    z-index: 1;
 }
 
 
@@ -69,7 +97,7 @@ img {
 
 .thanks {
     position: relative;
-    top: 60vh;
+    top: 50vh;
     left: 10vw;
     color: white;
     font-size: 10px;
@@ -78,13 +106,15 @@ img {
 
 .login {
     position: relative;
-    top: 60vh;
+    top: 45vh;
     left: 40vw;
     padding-left: 10px;
+    margin-left: 15px;
+    font-size: 15px;
 }
 
 button {
-    
+    margin-left: 20px;
     background-color: #596D48;
     color: white;
     border-radius: 5px;
@@ -96,39 +126,61 @@ button {
     position: absolute;
     top: 150%;
     left: 0%;
-    
     padding-left: 10px;
 }
 
 form {
     position: relative;
-    top: 40vh;
+    top: 25vh;
     left: 40vw;
     display: flex;
     width: 550px;
+    height: 150px;
     flex-wrap: wrap;
     align-items: center;
+    padding-left: 30px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    gap: 30px;
     
-    padding-left: 10px;
+}
+
+form::before, form::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1000px;
+    
+}
+
+form::before {
+    top: -20px;
+    height: 1px;
+    background-color: rgba(134, 127, 127, 0.274);
+}
+
+form::after {
+    top: 180px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.295);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.452);
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .signtext {
     position: relative;
-    top: 30vh;
+    top: 15vh;
     left: 40vw;
     display: flex;
     justify-content: flex-start;
-    width: 700px;
-    font-size: 20px;
-    
-    padding-left: 10px;
-    
+    max-width: 500px;
+    padding-left: 30px;
+    font-weight: 800;
     
 }
 
